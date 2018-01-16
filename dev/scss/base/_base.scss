@@ -1,0 +1,208 @@
+@import "settings/mixins";
+@import "tools/breakpoints";
+
+
+
+html {
+	font-size: $bodysize;
+	font-family: $body;
+}
+
+body {
+	background: $bg;
+}
+
+header{
+	
+}
+
+/* ==========================================================================
+   									Header
+   ========================================================================== */
+
+.header{
+	width:100%;
+	background:$bg;
+	
+	.logo{
+		width:21%;
+		margin: 0;
+		padding: 0;
+	}
+	nav{
+		width:auto;
+		height:40px;
+		margin-top:63px;
+		}
+
+	.ul-nav{
+		float:right;
+		width:auto;
+		display: none;
+		color:#000;
+		@include breakpoint(medium){
+		display:block;
+		}
+	li{
+		display:inline;
+		padding-left:10px;
+	}
+
+	a{
+		text-decoration:none;
+		@include links($black, $black, $orange, $grey); 
+		}
+	}
+}
+
+	.mobile-nav{
+		display:block;
+		margin-bottom:10px;
+		padding:0;
+		@include breakpoint(medium){
+		    display:none;
+		    margin-bottom:10px;
+			padding:0;
+		}
+	}
+
+
+
+
+
+/* ==========================================================================
+   									Slideshow
+   ========================================================================== */
+
+.img{
+  width:100%;
+  position: relative;
+  color:#000;
+  @include border-radius(10px);
+  .h1 { 
+  	z-index:300;
+   	position: absolute; 
+   	top: 200px; 
+   	left: 200px; 
+   	width: 100%;
+   	color: #00aaa1; 
+   	display: block;
+   	font-size:50px;
+	}
+}
+
+
+
+.caption{
+	position:absolute;
+	bottom:42px;
+	left:35px;
+	width:96.5%;
+	color:#1ac0b7;
+	text-align:left;
+	@include breakpoint(small){
+		bottom:85px;
+		right:160px;
+		width:86%;
+		text-align:right;
+		}
+	p.caption_content{
+		padding:10px;
+		margin:0px;
+		font-size: 2.5em;
+	@include breakpoint(small){
+		font-size: 3em;
+	}
+  }
+}
+
+
+
+.dot-center-mobile{
+	left: 40%;
+	bottom:-30px;
+	@include transform(-40%);
+	@include breakpoint(small){
+			bottom:10px;
+			left:30px;
+			}
+}
+
+.dot-nav{
+	position:absolute;
+	bottom:10px;
+	width:100px;
+	height:10px;
+}
+
+.dot{
+		width:10px;
+		height:10px;
+		background:#43464d;
+		border:1px solid #fff;
+		float:left;
+		margin-left: 5px;
+		@include border-radius(100%);
+		
+	}
+
+
+
+/* ==========================================================================
+   									Newsletter
+   ========================================================================== */
+
+.newsletter{
+	height:80px;
+	max-width: 1224px;
+	width: 96.5%;
+    margin-left: 20px;
+	background:$bg-news;
+	display:none;
+	@include border-radius(10px);
+	@include breakpoint(medium){
+		display:block;
+		}
+	.h3{
+		margin:15px 0px 0px 30px;
+		font-size:14px;
+		color: $white;
+		@include breakpoint(medium){
+		   font-size:17px;
+		   margin:10px 0px 0px 30px;
+		   }
+	}
+
+	.col{
+		padding:0;
+	}
+	
+}
+
+
+
+
+
+/* ==========================================================================
+   									Footer
+   ========================================================================== */
+
+footer{
+		width:100%;
+		font-family: $content;
+		font-size:0.9em;
+		color: $black;
+		display:none;
+		@include breakpoint(small){
+		   display:block;
+		   }
+	.col{
+		width:100%;
+	}
+	ul{
+		display: block;
+	}
+	  li{
+	  		display:inline;
+	  }
+}
