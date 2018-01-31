@@ -1,13 +1,17 @@
+body{
+	font-family: 'Poppins', sans-serif;
+	border: 0;
+	border: none;
+}
+
+
 .site {
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
-	
 }
 
 .site--content {
 	flex: 1;
+	margin:0 auto;
 }
-
-
-

@@ -1,0 +1,15 @@
+.footer-grid{
+	max-width: 1680px;
+	position: relative;
+	padding: 0 40px;
+	clear: both;
+
+	p{
+		@include margin (33px, null, 38px, null);
+		font-size: $footer;
+	
+	}
+}
+
+
+	
