@@ -1,0 +1,33 @@
+.dot-center-mobile{
+	left: 40%;
+	bottom:-30px;
+	@include transform(-40%);
+	@include breakpoint(small){
+			bottom:39px;
+			left:0px;
+			}
+}
+
+.dot-nav{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:140px;
+}
+
+.dot{
+		width:15px;
+		height:15px;
+		background:#43464d;
+		border:2px solid #fff;
+		float:left;
+		margin-right:15px;
+		@include border-radius(100%);
+		
+		
+	}
+
+
+	.margin{
+			margin-left:20px;
+		}

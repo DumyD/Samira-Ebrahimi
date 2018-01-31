@@ -1,0 +1,27 @@
+nav{
+		width:100%;
+		height:auto;
+		padding: 53px 20px 28px 0px;
+		font-size: 16px;
+		color: $black;
+		font-weight: normal;
+		}
+
+	.ul-nav{
+		display: none;
+			@include breakpoint(medium){
+				display:block;
+				float:right;
+				width:auto;
+		}
+	li{
+		display:inline;
+		margin-left:19px;
+	}
+
+	a{
+		text-decoration:none;
+		font-size: 16px;
+		@include links($black, $black, $orange, $grey); 
+		}
+	}

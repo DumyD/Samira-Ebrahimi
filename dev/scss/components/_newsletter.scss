@@ -1,0 +1,31 @@
+.newsletter{
+	width: 100%;
+	max-width: 1024px;
+	display: none;
+	background: rgb(185, 55, 59);
+	@include border-radius (20px);
+	margin: auto;
+	margin-top: 36px;
+	border:0;
+	@include breakpoint(medium){
+		display:block;
+		max-width: 1589px;
+		height: 80px;
+	}
+}
+
+
+
+
+
+.h1{
+		font-size: $news-small;
+		color: $white;
+		float:left;
+		clear:both;
+		@include margin (22px, 125px, 24px, 50px);
+		@include breakpoint(large){
+			@include margin (22px, 125px, 24px, 215px);
+			font-size: $news;
+	}
+}
